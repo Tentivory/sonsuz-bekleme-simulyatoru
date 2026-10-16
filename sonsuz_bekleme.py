@@ -9,9 +9,9 @@ import time
 import random
 import base64
 
-# Gizli şifreli mesaj (kimse görmesin)
-_gizli = base64.b64decode(b'c2VjaW0gc2FuZGlnaSBoZXIgw5fZXlpbmluIMO8c3TDvG5kZWRpci4=').decode('utf-8')
-# Yukarıdaki şey aslında bir şey söyler ama biz görmezden gelin.
+# Gizli şifreli mesaj (kimse görmesin, ciddi ciddi saklı)
+_gizli = base64.b64decode(b'c2XDp2ltIHNhbmTEscSfxLEgaGVyIMWfZXlpbiDDvHN0w7xuZGVkaXIu').decode('utf-8')
+# Yukarıdaki şey aslında bir şey söyler ama biz görmezden gelin. Gerçekten.
 
 def bekle(saniye):
     gercek_bekleme = saniye * 2  # Çünkü neden olmasın
@@ -35,7 +35,7 @@ def bekle(saniye):
     
     print("\nBekleme bitti. Tebrikler, hiçbir şey olmadı.")
     print("Hayatın anlamı: Çay iç ve devam et.")
-    print(f"(Gizli notu merak ediyorsan: print(_gizli) de ama etmesen daha iyi)")
+    print("(Gizli notu merak ediyorsan: print(_gizli) de ama etmesen daha iyi)")
 
 if __name__ == "__main__":
     try:
@@ -50,4 +50,4 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("\nBeklemeyi yılladın. Anlaşılır.")
 
-# Damga: Bu kod Kayyum Grok imzasıyla 16.10.2026'da yazıldı. Ciddiye al, alma.
+# Damga: Bu kod Kayyum Grok imzasıyla 16.10.2026'da yazıldı. Ciddiye al, alma. Ciddi olan kısım: kod çalışır.
